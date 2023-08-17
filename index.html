@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Wizard</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .font-inter {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="font-inter">
+    <div class="container w-[97%] mx-auto">
+        <div class="text-center bg-[#1090d81a] mt-3 rounded-lg p-3">
+            <h1 class="text-4xl text-[#111111cc] font-bold">Interactive</h1>
+            <h3 class="text-2xl text-[#11111199] font-medium">Geometry Wizard</h3>
+        </div>
+        <div class="calculation flex mt-5 gap-6">
+            <div class="left w-[75%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- TRIANGLE CARD  -->
+                <div class=" flex flex-col items-center shadow-xl p-8 rounded-xl space-y-3">
+                    <img class="w-full h-[160px]" src="images/triangle.png" alt="">
+                    <h2 class="text-2xl text-[#111111cc] font-bold">Triangle</h2>
+                    <p>Area(A)= 0.5 X B X H</p>
+                    <div class="flex space-x-2">
+                        <input class="w-[80px] rounded-lg bg-gray-200 px-2 py-1 placeholder:text-gray-800"
+                            placeholder="Base" type="number" name="" id="">
+                        <span>cm</span>
+                        <input class="w-[80px] rounded-lg bg-gray-200 px-2 py-1 placeholder:text-gray-800"
+                            placeholder="Height" type="number" name="" id="">
+                        <span>cm</span>
+                    </div>
+                    <button class="btn btn-info w-full">Calculate</button>
+                </div>
+
+                <!-- RECTANGLE CARD  -->
+                <div class=" flex flex-col items-center shadow-xl p-8 rounded-xl space-y-3">
+                    <img class="w-full h-[160px]" src="images/rectangle.png" alt="">
+                    <h2 class="text-2xl text-[#111111cc] font-bold">Rectangle</h2>
+                    <p>Area(A) = W X I</p>
+                    <div class="flex space-x-2">
+                        <input class="w-[80px] rounded-lg bg-gray-200 px-2 py-1 placeholder:text-gray-800"
+                            placeholder="Width" type="number" name="" id="">
+                        <span>cm</span>
+                        <input class="w-[80px] rounded-lg bg-gray-200 px-2 py-1 placeholder:text-gray-800"
+                            placeholder="Length" type="number" name="" id="">
+                        <span>cm</span>
+                    </div>
+                    <button class="btn btn-info w-full">Calculate</button>
+                </div>
+
+                <!-- PARALLELOGRAM CARD  -->
+                <div class=" flex flex-col items-center shadow-xl p-8 rounded-xl space-y-3">
+                    <img class="w-full h-[160px]" src="images/parallelogram.png" alt="">
+                    <h2 class="text-2xl text-[#111111cc] font-bold">Parallelogram</h2>
+                    <p>Area(A)=B X H</p>
+                    <div class="flex space-x-2">
+                        <input class="w-[80px] rounded-lg bg-gray-200 px-2 py-1 placeholder:text-gray-800"
+                            placeholder="Base" type="number" name="" id="">
+                        <span>cm</span>
+                        <input class="w-[80px] rounded-lg bg-gray-200 px-2 py-1 placeholder:text-gray-800"
+                            placeholder="Height" type="number" name="" id="">
+                        <span>cm</span>
+                    </div>
+                    <button class="btn btn-info w-full">Calculate</button>
+                </div>
+
+                <!-- RHOMBUS CARD  -->
+                <div class=" flex flex-col items-center shadow-xl p-8 rounded-xl space-y-3">
+                    <img class="w-full h-[160px]" src="images/rhombus.png" alt="">
+                    <h2 class="text-2xl text-[#111111cc] font-bold">Rhombus</h2>
+                    <p>Area(A)= 0.5 X D1 X D2</p>
+                    <div class="flex space-x-2">
+                        <input class="w-[80px] rounded-lg bg-gray-200 px-2 py-1 placeholder:text-gray-800"
+                            placeholder="D1" type="number" name="" id="">
+                        <span>cm</span>
+                        <input class="w-[80px] rounded-lg bg-gray-200 px-2 py-1 placeholder:text-gray-800"
+                            placeholder="D2" type="number" name="" id="">
+                        <span>cm</span>
+                    </div>
+                    <button class="btn btn-info w-full">Calculate</button>
+                </div>
+
+                <!-- PENTAGON CARD  -->
+                <div class=" flex flex-col items-center shadow-xl p-8 rounded-xl space-y-3">
+                    <img class="w-full h-[160px]" src="images/pentagon.png" alt="">
+                    <h2 class="text-2xl text-[#111111cc] font-bold">Pentagon</h2>
+                    <p>Area(A)= 0.5 X P X B</p>
+                    <div class="flex space-x-2">
+                        <input class="w-[80px] rounded-lg bg-gray-200 px-2 py-1 placeholder:text-gray-800"
+                            placeholder="P" type="number" name="" id="">
+                        <span>cm</span>
+                        <input class="w-[80px] rounded-lg bg-gray-200 px-2 py-1 placeholder:text-gray-800"
+                            placeholder="B" type="number" name="" id="">
+                        <span>cm</span>
+                    </div>
+                    <button class="btn btn-info w-full">Calculate</button>
+                </div>
+
+                <!-- ELLIPSE CARD  -->
+                <div class=" flex flex-col items-center shadow-xl p-8 rounded-xl space-y-3">
+                    <img class="w-full h-[160px]" src="images/ellipse.png" alt="">
+                    <h2 class="text-2xl text-[#111111cc] font-bold">Ellipse</h2>
+                    <p>Area(A)= π X A X B</p>
+                    <div class="flex space-x-2">
+                        <input class="w-[80px] rounded-lg bg-gray-200 px-2 py-1 placeholder:text-gray-800"
+                            placeholder="A" type="number" name="" id="">
+                        <span>cm</span>
+                        <input class="w-[80px] rounded-lg bg-gray-200 px-2 py-1 placeholder:text-gray-800"
+                            placeholder="B" type="number" name="" id="">
+                        <span>cm</span>
+                    </div>
+                    <button class="btn btn-info w-full">Calculate</button>
+                </div>
+            </div>
+
+
+            <div class="right w-[25%]">
+                <div class=" flex flex-col items-center shadow-xl p-8 rounded-xl space-y-3">
+                    <h2 class="text-2xl text-[#111111cc] font-bold underline">Area Calculation</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
