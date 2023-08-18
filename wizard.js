@@ -22,6 +22,7 @@ document.querySelector("#calculationDiv").addEventListener("click", function (ev
         let cmToM = objArea * 0.0001;
         objAreaElement.innerText = cmToM.toFixed(2);
         centimeter.innerText = "m";
+        event.target.disabled=true;
     }
 });
 
