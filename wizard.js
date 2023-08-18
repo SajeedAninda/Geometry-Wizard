@@ -20,9 +20,9 @@ document.querySelector("#calculationDiv").addEventListener("click", function (ev
         let centimeter = event.target.parentElement.querySelector(".centimeter");
         let objArea = parseFloat(objAreaElement.innerText);
         let cmToM = objArea * 0.0001;
-        objAreaElement.innerText = cmToM.toFixed(2);
+        objAreaElement.innerText = cmToM.toFixed(3);
         centimeter.innerText = "m";
-        event.target.disabled=true;
+        event.target.disabled = true;
     }
 });
 
